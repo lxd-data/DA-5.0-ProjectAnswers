@@ -38,3 +38,9 @@ for num in data:
     if num >= 0: positives.append(num)
     else: pass
 print(positives)
+
+"""Or this"""
+positives = []
+for num in data:
+    positives.append(num) if num >= 0 else False
+print(positives)
