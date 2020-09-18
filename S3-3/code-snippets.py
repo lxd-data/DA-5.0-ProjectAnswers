@@ -1,113 +1,113 @@
-# customer_id = [1023.0, 1024.0, 1025.0, 1026.0, 1027.0, 1028.0, 1029.0, 1030.0, 1031.0, 1032.0, 1033.0, 1034.0, 1035.0, 1036.0, 1037.0, 1038.0, 1039.0, 1040.0, 1041.0, 1042.0, 1043.0, 1044.0, 1045.0, 1046.0, 1047.0, 1048.0, 1049.0, 1050.0, 1051.0, 1052.0, 1053.0, 1054.0, 1055.0]
+customer_id = [1023.0, 1024.0, 1025.0, 1026.0, 1027.0, 1028.0, 1029.0, 1030.0, 1031.0, 1032.0, 1033.0, 1034.0, 1035.0, 1036.0, 1037.0, 1038.0, 1039.0, 1040.0, 1041.0, 1042.0, 1043.0, 1044.0, 1045.0, 1046.0, 1047.0, 1048.0, 1049.0, 1050.0, 1051.0, 1052.0, 1053.0, 1054.0, 1055.0]
 
-# i = 0
+i = 0
 
-# customer_id[i]= int(customer_id[i])
+customer_id[i]= int(customer_id[i])
 
-# for i in range(len(customer_id)):
-#     customer_id[i]= int(customer_id[i])
-# print(customer_id)
+for i in range(len(customer_id)):
+    customer_id[i]= int(customer_id[i])
+print(customer_id)
 
-# balance = 10
-# message = f"BALANCE UPDATE: Account balance is ${balance}"
+balance = 10
+message = f"BALANCE UPDATE: Account balance is ${balance}"
 
-# if balance < 0:
-#     message = "BALANCE ALERT: Account is overdrawn."
-# print(message)
-
-
-# price_per_night = 160
-# room_type = "Private room"
-# neighborhood = "Brooklyn"
-# message = f"The room price is {price_per_night} USD"
-# if price_per_night < 150:
-#     message = f"This accommodation is affordable for {neighborhood}."
-# print(message)
-
-# # EXAMPLE 1
-# area_code = 805
-
-# if area_code == 805:
-#     counties = ["Kern", "Monterey", "San Luis Obispo", "Santa Barbara", "Ventura"]
-#     print(f"The {area_code} area code has {len(counties)} counties")
-
-# print(f"{area_code} area code is in California.")
+if balance < 0:
+    message = "BALANCE ALERT: Account is overdrawn."
+print(message)
 
 
-# area_code = 415
+price_per_night = 160
+room_type = "Private room"
+neighborhood = "Brooklyn"
+message = f"The room price is {price_per_night} USD"
+if price_per_night < 150:
+    message = f"This accommodation is affordable for {neighborhood}."
+print(message)
 
-# if area_code == 805:
-#     counties = ["Kern", "Monterey", "San Luis Obispo", "Santa Barbara", "Ventura"]
-#     print("The {} area code has {} counties".format(area_code, len(counties)))
+# EXAMPLE 1
+area_code = 805
 
-# print("{} area code is in California.".format(area_code))
+if area_code == 805:
+    counties = ["Kern", "Monterey", "San Luis Obispo", "Santa Barbara", "Ventura"]
+    print(f"The {area_code} area code has {len(counties)} counties")
 
-# balance = float(input("Enter balance:"))
-# message = f"BALANCE UPDATE: Account balance is ${balance}"
-
-# if balance < 0:
-#     message = "BALANCE ALERT: Account is overdrawn."
-# if balance < 25 and balance >= 0:
-#     message = "BALANCE ALERT: Balance is low (under $25)."
-# print(message)
-
-# message = "BALANCE UPDATE: Account balance is ${}".format(balance)
-
-# if balance < 0: # outer if statement
-#     message = "BALANCE ALERT: Account is overdrawn."
-#     if balance <= -50: # nested if statement 
-#         message = "ACCOUNT ALERT: Overdraft fee for insufficient funds"
-# print(message)
+print(f"{area_code} area code is in California.")
 
 
-# if price_per_night < 150:
-#     message = f"This accomodation is affordable for {neighborhood}."
-#     if room_type == "Private room" or room_type == "Entire home/apt":
-#         message = f"This {room_type} is affordable for {neighborhood}."
-#     else:
-#         message = "This accomodation is affordable, but it isn't the right type."
-# else:
-#     message = "This accomodation is not within your budget."
-# print(message)
+area_code = 415
+
+if area_code == 805:
+    counties = ["Kern", "Monterey", "San Luis Obispo", "Santa Barbara", "Ventura"]
+    print("The {} area code has {} counties".format(area_code, len(counties)))
+
+print("{} area code is in California.".format(area_code))
+
+balance = float(input("Enter balance:"))
+message = f"BALANCE UPDATE: Account balance is ${balance}"
+
+if balance < 0:
+    message = "BALANCE ALERT: Account is overdrawn."
+if balance < 25 and balance >= 0:
+    message = "BALANCE ALERT: Balance is low (under $25)."
+print(message)
+
+message = "BALANCE UPDATE: Account balance is ${}".format(balance)
+
+if balance < 0: # outer if statement
+    message = "BALANCE ALERT: Account is overdrawn."
+    if balance <= -50: # nested if statement 
+        message = "ACCOUNT ALERT: Overdraft fee for insufficient funds"
+print(message)
 
 
-# if balance < 0:
-#     print("BALANCE ALERT: Account is overdrawn.")
-#     if balance <= -50:
-#         message = "ACCOUNT ALERT: Overdraft fee for insufficient funds"
-#     else:
-#         message = "ACCOUNT ALERT: If account balance is greater than or equal to -$50 an overdraft fee will be applied."
-# elif balance < 25:
-#     message = "BALANCE ALERT: Balance is low (under $25)."
-# else:
-#     message = f"BALANCE UPDATE: Account balance is ${balance}"
+if price_per_night < 150:
+    message = f"This accomodation is affordable for {neighborhood}."
+    if room_type == "Private room" or room_type == "Entire home/apt":
+        message = f"This {room_type} is affordable for {neighborhood}."
+    else:
+        message = "This accomodation is affordable, but it isn't the right type."
+else:
+    message = "This accomodation is not within your budget."
+print(message)
 
 
-# if balance < 0:
-#     print("BALANCE ALERT: Account is overdrawn.")
-#     if balance <= -50:
-#         message = "ACCOUNT ALERT: Overdraft fee for insufficient funds"
-#     else:
-#         message = "ACCOUNT ALERT: If account balance is greater than or equal to -$50 an overdraft fee will be applied."
-# elif balance < 25:
-#     message = "BALANCE ALERT: Balance is low (under $25)."
-# else:
-#     message = f"BALANCE UPDATE: Account balance is ${balance}"
+if balance < 0:
+    print("BALANCE ALERT: Account is overdrawn.")
+    if balance <= -50:
+        message = "ACCOUNT ALERT: Overdraft fee for insufficient funds"
+    else:
+        message = "ACCOUNT ALERT: If account balance is greater than or equal to -$50 an overdraft fee will be applied."
+elif balance < 25:
+    message = "BALANCE ALERT: Balance is low (under $25)."
+else:
+    message = f"BALANCE UPDATE: Account balance is ${balance}"
 
-# print(message)
 
-# if price_per_night < 150:
-#     message = f'This accomodation is affordable for the {neighborhood}.'
-#     if room_type == "Private room" or room_type == "Entire house/apt":
-#         message = f"This {room_type} is affordable for {neighborhood}. You should book it." 
-#     else:
-#         message = "This accommodation is affordable, but it isn't the right type"
-# elif neighborhood == "Brooklyn":
-#         message = "This accommodation is outside of your budget, but it's in your desired neighborhood"
-# else:
-#     message = "You should keep looking"
+if balance < 0:
+    print("BALANCE ALERT: Account is overdrawn.")
+    if balance <= -50:
+        message = "ACCOUNT ALERT: Overdraft fee for insufficient funds"
+    else:
+        message = "ACCOUNT ALERT: If account balance is greater than or equal to -$50 an overdraft fee will be applied."
+elif balance < 25:
+    message = "BALANCE ALERT: Balance is low (under $25)."
+else:
+    message = f"BALANCE UPDATE: Account balance is ${balance}"
+
+print(message)
+
+if price_per_night < 150:
+    message = f'This accomodation is affordable for the {neighborhood}.'
+    if room_type == "Private room" or room_type == "Entire house/apt":
+        message = f"This {room_type} is affordable for {neighborhood}. You should book it." 
+    else:
+        message = "This accommodation is affordable, but it isn't the right type"
+elif neighborhood == "Brooklyn":
+        message = "This accommodation is outside of your budget, but it's in your desired neighborhood"
+else:
+    message = "You should keep looking"
    
-# print(message)
+print(message)
 
 list = ["Python", "is", "fun"]
 string = "Python"
