@@ -31,15 +31,22 @@ def divide_likes_views(pairs):
     return round(percentage_likes, 2)
 
 # works
-def remove_lower(percent):
-    if percent > .5:
-        return True
-    else:
-        return False
+# did not work (should?)
+def divide_likes_views(pairs):
+    likes = pairs[0]
+    views = pairs[1]
+    likes_div_views = round((likes/views) * 100, 2)
+    return likes_div_views
 
-# didnt
-def remove_lower(percent):
-    if percent < .5:
-        return False
-    else:
-        return True
+# did work (shouldnt?)
+
+def divide_likes_views(pairs):
+    likes = pairs[0]
+    views = pairs[1]
+    likes_div_views = round((likes/views), 2)
+    return likes_div_views
+
+# doesnt, should! 
+def divide_likes_views(pairs):
+    percentage_likes = pairs[0]/pairs[1] * 100
+    return round(percentage_likes, 2)
